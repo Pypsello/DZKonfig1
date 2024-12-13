@@ -1,0 +1,85 @@
+Тесты для комманды cp:
+
+test 1:
+user_name:-----Welcome to the shell emulator!-------
+$
+$ ls
+1.txt  2.txt  folder  start_file.txt
+$ cp 1.txt 11.txt
+$ ls
+1.txt  2.txt  folder  start_file.txt  11.txt
+$ history
+ls
+cp 1.txt 11.txt
+ls
+$ exit
+Exiting emulator.
+
+
+test 2:
+user_name:-----Welcome to the shell emulator!-------
+$ ls
+2.txt  folder  start_file.txt  1.txt  
+$ cp 1.txt 1copy.txt
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt
+$ cp 1copy.txt 1copiedcopy.txt
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt
+$ exit
+Exiting emulator.
+
+test 3:
+user_name:-----Welcome to the shell emulator!-------
+$ cp 1.txt copiedfile.txt
+1.txt  2.txt  folder  start_file.txt  copiedfile.txt  
+$ cp 1.txt 1.txt
+$ ls
+1.txt  2.txt  folder  start_file.txt  copiedfile.txt  1.txt  
+$ exit
+
+
+Тесты для комманды history:
+test 1:
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ cd folder
+$ ls
+3.txt
+$ history
+ls
+cd folder
+ls
+$
+
+test 2:
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ ls                                                              
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ ls                                                              
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ ls                                                              
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ ls                                                              
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ history                                                         
+ls
+ls
+ls
+ls
+ls
+test 3:
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ cd folder
+$ cd /
+$ ls
+2.txt  folder  start_file.txt  1.txt  1copy.txt  1copiedcopy.txt  
+$ history
+ls
+cd folder
+cd /
+ls
+$
+
